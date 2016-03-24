@@ -6,9 +6,9 @@ php-apache:
     volumes:
         - ".:/var/www/html:rw"
     links:
-        - "db:db"
+        - "mysql"
 
-db:
+mysql:
     image: mysql:5.7
     ports:
         - "3307:3306"
